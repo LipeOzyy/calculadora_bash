@@ -12,7 +12,6 @@ menu() {
     echo "8 - Resto da divisão"
     echo "9 - Ao quadrado dos dois números"
     echo "0 - Sair"
-    echo "============================"
 }
 
 fatorial() {
