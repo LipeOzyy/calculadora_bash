@@ -10,6 +10,7 @@ menu() {
     echo "6 - PA (5 termos)"
     echo "7 - PG (5 termos)"
     echo "8 - Resto da divisão"
+    echo "9 - Ao quadrado dos dois números"
     echo "0 - Sair"
     echo "============================"
 }
@@ -82,6 +83,12 @@ while true; do
         8)
             resto=$((num1 % num2))
             echo "Resto da divisão de $num1 por $num2: $resto"
+            ;;
+        9)
+            quad1=$(echo "$num1 * $num1" | bc)
+            quad2=$(echo "$num2 * $num2" | bc)
+            echo "$num1² = $quad1"
+            echo "$num2² = $quad2"
             ;;
         *)
             echo "Opção inválida!"
